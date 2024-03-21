@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Katekani Country Lodge",
+    "description": "",
+    "type": "Website",
+    "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript(jQuery)"],
+    "borderColor": "orange",
+    "img": "https://kingslytshepiso.github.io/Katekani-Country-Lodge-init/images/1-crown.png"
+  },
+  {
+    "name": "Robot Apocalypse",
+    "type": "API",
+    "technologies": ["Java", "Spring Boot", "HTTP"],
+    "borderColor": "red",
+    "img": "./images/robot-apocalypse.jpg"
+  },
+  {
+    "name": "Katekani Country Lodge"
+  }
+]

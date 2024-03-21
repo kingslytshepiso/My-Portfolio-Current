@@ -1,0 +1,67 @@
+body {
+  min-width: 320px;
+}
+.album-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 4px;
+}
+.album-item {
+  margin: 5px;
+  border: 1px white solid;
+  border-radius: 4px;
+  width: 45%;
+  height: 100%;
+  transition: 500ms;
+}
+.album-illustration {
+  justify-content: flex-start;
+  height: 160px;
+  padding: 4px;
+  margin: 5px;
+  border-bottom: 4px solid silver;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.album-description {
+  padding-inline: 10px;
+  & p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .album-item {
+    width: 100%;
+  }
+  .album-illustration {
+    & img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+  .album-item {
+    width: 100%;
+  }
+  .album-illustration {
+    & img {
+      width: auto;
+      height: 100%;
+    }
+  }
+} */
