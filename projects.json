@@ -1,20 +1,32 @@
 [
   {
-    "name": "Katekani Country Lodge",
-    "description": "",
-    "type": "Website",
-    "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript(jQuery)"],
-    "borderColor": "orange",
-    "img": "https://kingslytshepiso.github.io/Katekani-Country-Lodge-init/images/1-crown.png"
-  },
-  {
-    "name": "Robot Apocalypse",
+    "name": "Robot Apocalypse &#129302;",
+    "description": "The Robot Apocalypse application encompasses the APIs to cater for survivors during the crisis of a robot zombie outbreak. The application provides survivors with the resources to manage and organise resources during the outbreak. Survivors are able to flag other survivors incase they suspect or confirm an infection. The inventory for a survivor allows to specify their resources, not limiting them with the kind of resources they can have. The source code also includes JUnit 5 tests that were used during development to verify the required functionality and pass the acceptance citerias.",
     "type": "API",
     "technologies": ["Java", "Spring Boot", "HTTP"],
     "borderColor": "red",
-    "img": "./images/robot-apocalypse.jpg"
+    "img": "./images/robot-apocalypse.jpg",
+    "projectLink": "https://github.com/kingslytshepiso/robotapocalypse.git",
+    "date": "01/02/2024"
   },
   {
-    "name": "Katekani Country Lodge"
+    "name": "Katekani Country Lodge &#128081;",
+    "description": "Katekani Country Lodge Website provides vacation planners a simpler and easier way to do it. This is a html project built by me and my team during an internship at CAPACITI. It is a demonstration project to showcase our HTML, CSS, JavaScript and jQuery skills.",
+    "type": "Website",
+    "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript(jQuery)"],
+    "borderColor": "orange",
+    "img": "https://kingslytshepiso.github.io/Katekani-Country-Lodge-init/images/1-crown.png",
+    "projectLink": "https://github.com/kingslytshepiso/Katekani-Country-Lodge-init.git",
+    "date": "15/05/2023"
+  },
+  {
+    "name": "---Project Name---",
+    "description": "---Description---",
+    "type": "---Type---",
+    "technologies": ["Tech"],
+    "borderColor": "---color---",
+    "img": "---link---",
+    "projectLink": "---link---",
+    "date": "---date---"
   }
 ]

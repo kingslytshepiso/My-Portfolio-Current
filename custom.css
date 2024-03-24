@@ -11,9 +11,17 @@ body {
   position: fixed;
   z-index: 1;
 }
-/* header {
+header {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
   background: linear-gradient(transparent, rgb(33, 37, 41));
-} */
+}
+.project-section {
+  border: 1px white solid;
+  border-radius: 5px;
+  background: linear-gradient(rgb(33, 37, 41), transparent, rgb(33, 37, 41));
+}
 .album-container {
   display: flex;
   justify-content: space-evenly;
@@ -21,12 +29,33 @@ body {
   padding: 0rem 0.5rem;
 }
 .album-item {
+  display: flex;
+  justify-content: center;
   margin: 5px;
   border: 1px transparent solid;
   border-radius: 4px;
   width: 45%;
   height: 414px;
   transition: 500ms;
+  position: relative;
+}
+.album-wrapper {
+  position: absolute;
+  z-index: 60;
+  top: 0;
+}
+.album-cover {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  filter: blur(1);
+}
+
+.album-cover img {
+  height: 100%;
 }
 .album-illustration {
   justify-content: flex-start;
@@ -34,12 +63,32 @@ body {
   padding: 4px;
   margin: 5px;
   border-bottom: 4px solid silver;
+  position: relative;
+  overflow: hidden;
+  & div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   & img {
     width: 100%;
     max-width: 268px;
     height: 100%;
   }
+  & .album-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 160px;
+    left: 0;
+    transition: 500ms;
+    background: white;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+  }
 }
+
 .album-description {
   padding-inline: 10px;
   & p {
@@ -52,9 +101,20 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  header {
+    position: static !important;
+    border: none;
+    background: none;
+  }
   .album-item {
     width: auto;
   }
@@ -64,6 +124,8 @@ body {
       height: 90%;
     }
   }
+}
+@media only screen and (max-width: 320px) {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up)

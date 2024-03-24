@@ -1,70 +1,31 @@
-#slideshow {
-  text-align: center;
-  overflow: hidden;
+/*Author: USHOU, https://codepen.io/USHOU*/
+#slider {
+  width: 100vw;
   height: 100vh;
-  /* width: 728px; */
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
 }
 
-.slide-wrapper {
-  width: 2912px;
-  -webkit-animation: slide 18s ease infinite;
+.photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
-.slide {
-  float: left;
-  height: 100vh;
-  width: 728px;
-  & .slide-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.photo img {
+  width: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .photo img {
+    width: 100%;
     height: 100%;
   }
 }
-
-.slide:nth-child(2) {
-  background: #037e8c;
-}
-
-.slide:nth-child(4) {
-  background: #d93b65;
-}
-
-.slide:nth-child(6) {
-  background: #36bf66;
-}
-
-.slide:nth-child(8) {
-  background: #d9d055;
-}
-
-.slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em;
-}
-
-@-webkit-keyframes slide {
-  20% {
-    margin-left: 0px;
-  }
-  30% {
-    margin-left: -728px;
-  }
-  50% {
-    margin-left: -728px;
-  }
-  60% {
-    margin-left: -1456px;
-  }
-  70% {
-    margin-left: -1456px;
-  }
-  80% {
-    margin-left: -2184px;
-  }
-  90% {
-    margin-left: -2184px;
+@media only screen and (max-width: 320px) {
+  .photo img {
+    width: unset;
+    height: 100%;
   }
 }
